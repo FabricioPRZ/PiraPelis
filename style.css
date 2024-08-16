@@ -150,17 +150,14 @@ div.sticky {
 }
 
 .parrafo-bienvenida {
-  position: absolute; /* Posiciona el párrafo sobre la imagen */
   color: #ffffff; /* Dorado brillante para el texto */
   font-size: 20px;
   text-align: center;
-  width: 100%;
-  top: 50%; /* Centra el párrafo verticalmente */
+  width: auto;
+  top: 50%l; /* Centra el párrafo verticalmente */
   left: 50%; /* Centra el párrafo horizontalmente */
-  transform: translate(-50%, 100%); /* Ajuste preciso para centrar */
   z-index: 10; /* Asegura que el párrafo esté sobre la imagen */
   padding: 1rem; /* Espacio alrededor del texto */
-  border-radius: 10px; /* Bordes redondeados */
 }
 
 .img2 {
