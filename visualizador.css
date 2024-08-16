@@ -1,0 +1,154 @@
+/* Estilos globales */
+body {
+    margin: 0;
+    background-color: #121212; /* Negro muy oscuro para el fondo */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #e0e0e0; /* Gris claro para el texto */
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121212; /* Negro muy oscuro para navbar */
+    padding: 1rem; /* Ajuste basado en rem */
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+    border-bottom: 2px solid #f1c40f; /* Dorado brillante para borde inferior */
+}
+
+.navbar .back-arrow {
+    color: #e0e0e0; /* Gris claro */
+    text-decoration: none;
+    font-size: 2rem; /* Ajuste basado en rem */
+}
+
+.search-container {
+    position: relative;
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    max-width: 500px; /* Establece un ancho máximo para la barra de búsqueda */
+    margin: 0 auto; /* Centra la barra de búsqueda horizontalmente */
+}
+
+.search-bar {
+    width: 100%; /* La barra de búsqueda ocupa el 100% del ancho del contenedor */
+    padding: 10px;
+    padding-left: 40px; /* Espacio para el ícono de búsqueda */
+    border-radius: 5px;
+    border: 1px solid #333; /* Gris oscuro para el borde */
+    background-color: #1c1c1c; /* Gris muy oscuro para el fondo */
+    color: #e0e0e0; /* Gris claro para el texto */
+    font-size: 16px;
+    box-sizing: border-box; /* Incluye el padding y el border en el ancho total */
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 1rem; /* Ajuste basado en rem */
+    transform: translateY(-50%);
+    color: #f1c40f; /* Dorado brillante para el ícono */
+    font-size: 1.5rem; /* Ajuste basado en rem */
+}
+
+.navbar .logo {
+    width: 5vw; /* Ajuste relativo */
+    height: auto;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 4%; /* Padding relativo */
+}
+
+.video-container {
+    width: 100%;
+    max-width: 90vw; /* Ajuste máximo relativo al ancho de la ventana */
+    position: relative;
+    margin-bottom: 2%;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 50vw; /* Ajusta la altura en proporción al ancho */
+}
+
+.movie-title {
+    text-align: center;
+    font-size: 2rem; /* Tamaño relativo */
+    color: #e0e0e0; /* Gris claro */
+    margin-top: 1%;
+}
+
+.share-icon {
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    color: #f1c40f; /* Dorado brillante */
+    font-size: 2rem; /* Tamaño relativo */
+    text-decoration: none;
+}
+
+.details {
+    text-align: center;
+    color: #e0e0e0; /* Gris claro */
+}
+
+.movie-image {
+    width: 20%;
+    max-width: 80vw; /* Ajuste máximo relativo al ancho de la ventana */
+    height: auto;
+    margin-bottom: 2%;
+}
+
+.description {
+    text-align: justify;
+    color: #e0e0e0; /* Gris claro */
+    font-size: 1rem; /* Tamaño relativo */
+}
+
+/* Sección recomendada */
+.recommended-section {
+    padding: 2% 4%; /* Padding relativo */
+    background-color: #1f1f1f; /* Gris oscuro */
+    color: #e0e0e0; /* Gris claro */
+}
+
+.recommended-section h2 {
+    text-align: center;
+    font-size: 2rem; /* Tamaño relativo */
+    margin-bottom: 2%;
+    color: #f1c40f; /* Dorado brillante */
+}
+
+.recommended-movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.recommended-movies a {
+    display: block;
+    margin: 2%;
+    text-align: center;
+    color: #e0e0e0; /* Gris claro */
+    text-decoration: none;
+}
+
+.recommended-movies img {
+    display: block;
+    max-width: 30vw; /* Ajuste máximo relativo al ancho de la ventana */
+    height: auto;
+    border: 0.2rem solid #f1c40f; /* Dorado brillante */
+}
+
+.recommended-movies p {
+    margin-top: 1%;
+    font-size: 1.5rem; /* Tamaño relativo */
+    color: #e0e0e0; /* Gris claro */
+}

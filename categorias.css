@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  background-color: #121212; /* Negro muy oscuro para el fondo */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #e0e0e0; /* Gris claro para el texto */
+}
+
+div.sticky {
+  position: sticky;
+  top: 0;
+  padding: 1rem; /* Ajuste basado en rem */
+  text-align: left;
+  background-color: #1f1f1f; /* Gris oscuro para el fondo */
+  border: 2px solid #333; /* Gris oscuro para el borde */
+  font-family: Arial, sans-serif;
+  z-index: 1000;
+  color: #e0e0e0; /* Gris claro para el texto */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #121212; /* Negro muy oscuro para navbar */
+  padding: 1rem; /* Ajuste basado en rem */
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  border-bottom: 2px solid #f1c40f; /* Dorado brillante para borde inferior */
+}
+
+.search-container {
+  position: relative;
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+  max-width: 500px; /* Establece un ancho máximo para la barra de búsqueda */
+  margin: 0 auto; /* Centra la barra de búsqueda horizontalmente */
+}
+
+.search-bar {
+  width: 100%; /* La barra de búsqueda ocupa el 100% del ancho del contenedor */
+  padding: 10px;
+  padding-left: 40px; /* Espacio para el ícono de búsqueda */
+  border-radius: 5px;
+  border: 1px solid #333; /* Gris oscuro para el borde */
+  background-color: #1c1c1c; /* Gris muy oscuro para el fondo */
+  color: #e0e0e0; /* Gris claro para el texto */
+  font-size: 16px;
+  box-sizing: border-box; /* Incluye el padding y el border en el ancho total */
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 1rem; /* Ajuste basado en rem */
+  transform: translateY(-50%);
+  color: #f1c40f; /* Dorado brillante para el ícono */
+  font-size: 1.5rem; /* Ajuste basado en rem */
+}
+
+h2 {
+  font-size: 1.875rem; /* Ajuste basado en rem */
+  background-color: #1f1f1f; /* Gris oscuro para el fondo */
+  color: #f1c40f; /* Dorado brillante para el texto */
+  text-align: center;
+}
+
+li {
+  color: #e0e0e0; /* Gris claro para el texto */
+}
+
+h3, h4 {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 2.5rem; /* Ajuste basado en rem */
+  color: #f1c40f; /* Dorado brillante */
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  background-color: #121212; /* Negro muy oscuro para el menú */
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu ul li {
+  position: relative;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 0.8rem 1.5rem; /* Ajuste basado en rem */
+  color: #e0e0e0; /* Gris claro para el texto */
+  text-decoration: none;
+}
+
+.menu ul li:hover > ul {
+  display: block;
+}
+
+.menu ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #1c1c1c; /* Gris muy oscuro para submenús */
+  width: 150px;
+}
+
+.menu ul ul li {
+  display: block;
+  width: 100%;
+}
+
+.menu ul ul li a {
+  padding: 0.8rem 1rem; /* Ajuste basado en rem */
+  color: #e0e0e0; /* Gris claro para el texto */
+}
+
+.menu ul ul ul {
+  top: 0;
+  left: 100%;
+}
+
+.menu ul ul ul li {
+  padding-left: 10px;
+}
+
+.menu ul li:hover > a {
+  background-color: #333; /* Gris oscuro al pasar el mouse */
+  color: #f1c40f; /* Dorado brillante para el texto al pasar el mouse */
+}
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2%; /* Ajusta el espacio entre elementos usando porcentaje */
+  padding: 2%; /* Ajuste basado en porcentaje */
+}
+
+.movie {
+  flex: 1 1 20%; /* Permite que los elementos se ajusten en pantallas más pequeñas */
+  max-width: 200px;
+  text-align: center;
+}
+
+.movie img {
+  width: 100%; /* Ajuste para que la imagen se ajuste al contenedor */
+  height: auto; /* Mantiene las proporciones de la imagen */
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.movie img:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: #121212; /* Negro muy oscuro para el menú */
+  }
+  
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menu ul li {
+    position: relative;
+  }
+  
+  .menu ul li a {
+    display: block;
+    padding: 0.8rem 1.5rem; /* Ajuste basado en rem */
+    color: #e0e0e0; /* Gris claro para el texto */
+    text-decoration: none;
+  }
+  
+  .menu ul li:hover > ul {
+    display: block;
+  }
+  
+  .menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #1c1c1c; /* Gris muy oscuro para submenús */
+    width: 150px;
+  }
+  
+  .menu ul ul li {
+    display: block;
+    width: 100%;
+  }
+  
+  .menu ul ul li a {
+    padding: 0.8rem 1rem; /* Ajuste basado en rem */
+    color: #e0e0e0; /* Gris claro para el texto */
+  }
+  
+  .menu ul ul ul {
+    top: 0;
+    left: 100%;
+  }
+  
+  .menu ul ul ul li {
+    padding-left: 10px;
+  }
+  
+  .menu ul li:hover > a {
+    background-color: #333; /* Gris oscuro al pasar el mouse */
+    color: #f1c40f; /* Dorado brillante para el texto al pasar el mouse */
+  }
+
+div.sticky {
+    position: sticky;
+    top: 0;
+    padding: 1rem; /* Ajuste basado en rem */
+    text-align: left;
+    background-color: #1f1f1f; /* Gris oscuro para el fondo */
+    border: 2px solid #333; /* Gris oscuro para el borde */
+    font-family: Arial, sans-serif;
+    z-index: 1000;
+    color: #e0e0e0; /* Gris claro para el texto */
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121212; /* Negro muy oscuro para navbar */
+    padding: 1rem; /* Ajuste basado en rem */
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+    border-bottom: 2px solid #f1c40f; /* Dorado brillante para borde inferior */
+  }
+  
+  /* Contenedor de la barra de búsqueda */
+  .search-container {
+    position: relative;
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    max-width: 500px; /* Establece un ancho máximo para la barra de búsqueda */
+    margin: 0 auto; /* Centra la barra de búsqueda horizontalmente */
+  }
+  
+  /* Estilo de la barra de búsqueda */
+  .search-bar {
+    width: 100%; /* La barra de búsqueda ocupa el 100% del ancho del contenedor */
+    padding: 10px;
+    padding-left: 40px; /* Espacio para el ícono de búsqueda */
+    border-radius: 5px;
+    border: 1px solid #333; /* Gris oscuro para el borde */
+    background-color: #1c1c1c; /* Gris muy oscuro para el fondo */
+    color: #e0e0e0; /* Gris claro para el texto */
+    font-size: 16px;
+    box-sizing: border-box; /* Incluye el padding y el border en el ancho total */
+  }
+  
+  /* Estilo del ícono de búsqueda */
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 1rem; /* Ajuste basado en rem */
+    transform: translateY(-50%);
+    color: #f1c40f; /* Dorado brillante para el ícono */
+    font-size: 1.5rem; /* Ajuste basado en rem */
+  }
+
+.estrenos-section {
+    padding: 40px;
+    background-color: #1c1c1c;
+}
+
+.estrenos-section h2 {
+    font-size: 2rem;
+    color: #ffcc00; /* Color dorado oscuro */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.peliculas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.pelicula {
+    background-color: #2c2c2c;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pelicula img{
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.pelicula:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.movie-title {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.pelicula p {
+    font-size: 1rem;
+    color: #cccccc;
+}
+
+button {
+    display: block;
+    margin: 40px auto 0;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ff6347;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4500; /* Color rojo oscuro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

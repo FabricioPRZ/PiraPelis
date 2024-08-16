@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+    color: #fff;
+}
+
+.terminos-section {
+    padding: 40px;
+    background-color: #1c1c1c;
+}
+
+.terminos-section h2 {
+    font-size: 2rem;
+    color: #ffcc00; /* Color dorado oscuro */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.terminos-content h3 {
+    font-size: 1.5rem;
+    color: #ff6347; /* Color rojo tomate */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.terminos-content p {
+    font-size: 1rem;
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.terminos-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

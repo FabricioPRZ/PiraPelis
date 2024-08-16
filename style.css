@@ -1,0 +1,301 @@
+body {
+  margin: 0;
+  background-color: #121212; /* Negro muy oscuro para el fondo */
+  font-size: 16px; /* Tamaño base ajustado con rem */
+  color: #e0e0e0; /* Gris claro para el texto */
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem; /* Ajuste basado en rem */
+  font-family: 'Arial', sans-serif;
+  color: #f1c40f; /* Dorado brillante para encabezados */
+}
+
+h2 {
+  font-size: 1.875rem; /* Ajuste basado en rem */
+  background-color: #1f1f1f; /* Gris oscuro para el fondo */
+  color: #f1c40f; /* Dorado brillante para el texto */
+}
+
+li {
+  color: #e0e0e0; /* Gris claro para el texto */
+}
+
+/* Contenedor del logo para centrarlo y ajustar su tamaño */
+.logo-container {
+  position: relative; /* Permite que el contenido absoluto se posicione dentro del contenedor */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Estilo del logo para hacerlo responsivo */
+.logo {
+  max-width: 100%;
+  height: 600px;
+  display: block;
+  margin: 0 auto;
+}
+
+.selector_clase {
+  color: #e0e0e0; /* Gris claro para el texto */
+}
+
+/* Contenedor de la tabla */
+.table-container {
+  width: 100%;
+  max-width: 100%; /* Asegura que la tabla no se expanda más allá del contenedor */
+  overflow-x: auto; /* Permite el desplazamiento horizontal si la tabla es más ancha que el contenedor */
+  box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
+
+/* Estilo de la tabla */
+#customers {
+  width: 100%; /* Asegura que la tabla ocupe el 100% del ancho del contenedor */
+  border-collapse: collapse; /* Colapsa bordes para que no haya espacio entre ellos */
+}
+
+/* Estilo de las celdas */
+#customers td, #customers th {
+  border: 1px solid #333; /* Gris oscuro para el borde */
+  padding: 8px;
+}
+
+/* Estilo de las filas pares */
+#customers tr:nth-child(even) {
+  background-color: #1c1c1c; /* Gris muy oscuro para filas pares */
+}
+
+/* Estilo de las filas */
+#customers tr {
+  background-color: #121212; /* Negro muy oscuro para filas */
+}
+
+/* Estilo de los encabezados */
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #1f1f1f; /* Gris oscuro para encabezados */
+  color: #f1c40f; /* Dorado brillante para el texto */
+}
+
+h3, h4 {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 2.5rem; /* Ajuste basado en rem */
+  color: #f1c40f; /* Dorado brillante */
+}
+
+div.sticky {
+  position: sticky;
+  top: 0;
+  padding: 1rem; /* Ajuste basado en rem */
+  text-align: left;
+  background-color: #1f1f1f; /* Gris oscuro para el fondo */
+  border: 2px solid #333; /* Gris oscuro para el borde */
+  font-family: Arial, sans-serif;
+  z-index: 1000;
+  color: #e0e0e0; /* Gris claro para el texto */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #121212; /* Negro muy oscuro para navbar */
+  padding: 1rem; /* Ajuste basado en rem */
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  border-bottom: 2px solid #f1c40f; /* Dorado brillante para borde inferior */
+}
+
+/* Contenedor de la barra de búsqueda */
+.search-container {
+  position: relative;
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+  max-width: 500px; /* Establece un ancho máximo para la barra de búsqueda */
+  margin: 0 auto; /* Centra la barra de búsqueda horizontalmente */
+}
+
+/* Estilo de la barra de búsqueda */
+.search-bar {
+  width: 100%; /* La barra de búsqueda ocupa el 100% del ancho del contenedor */
+  padding: 10px;
+  padding-left: 40px; /* Espacio para el ícono de búsqueda */
+  border-radius: 5px;
+  border: 1px solid #333; /* Gris oscuro para el borde */
+  background-color: #1c1c1c; /* Gris muy oscuro para el fondo */
+  color: #e0e0e0; /* Gris claro para el texto */
+  font-size: 16px;
+  box-sizing: border-box; /* Incluye el padding y el border en el ancho total */
+}
+
+/* Estilo del ícono de búsqueda */
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 1rem; /* Ajuste basado en rem */
+  transform: translateY(-50%);
+  color: #f1c40f; /* Dorado brillante para el ícono */
+  font-size: 1.5rem; /* Ajuste basado en rem */
+}
+
+.parrafo {
+  text-align: justify;
+  color: #e0e0e0; /* Gris claro para el texto */
+}
+
+.parrafo-bienvenida {
+  position: absolute; /* Posiciona el párrafo sobre la imagen */
+  color: #ffffff; /* Dorado brillante para el texto */
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  top: 50%; /* Centra el párrafo verticalmente */
+  left: 50%; /* Centra el párrafo horizontalmente */
+  transform: translate(-50%, 100%); /* Ajuste preciso para centrar */
+  z-index: 10; /* Asegura que el párrafo esté sobre la imagen */
+  padding: 1rem; /* Espacio alrededor del texto */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+.img2 {
+  float: left;
+  margin: 1rem; /* Ajuste basado en rem */
+}
+
+.img2:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.div2 {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  padding: 1.5rem; /* Ajuste basado en rem */
+  border: 4px solid #121212; /* Negro muy oscuro para el borde */
+  box-sizing: border-box;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  background-color: #121212; /* Negro muy oscuro para el menú */
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu ul li {
+  position: relative;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 0.8rem 1.5rem; /* Ajuste basado en rem */
+  color: #e0e0e0; /* Gris claro para el texto */
+  text-decoration: none;
+}
+
+.menu ul li:hover > ul {
+  display: block;
+}
+
+.menu ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #1c1c1c; /* Gris muy oscuro para submenús */
+  width: 150px;
+}
+
+.menu ul ul li {
+  display: block;
+  width: 100%;
+}
+
+.menu ul ul li a {
+  padding: 0.8rem 1rem; /* Ajuste basado en rem */
+  color: #e0e0e0; /* Gris claro para el texto */
+}
+
+.menu ul ul ul {
+  top: 0;
+  left: 100%;
+}
+
+.menu ul ul ul li {
+  padding-left: 10px;
+}
+
+.menu ul li:hover > a {
+  background-color: #333; /* Gris oscuro al pasar el mouse */
+  color: #f1c40f; /* Dorado brillante para el texto al pasar el mouse */
+}
+
+.footer {
+  background-color: #1c1c1c; /* Fondo del footer */
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #ffcc00; /* Línea superior dorada */
+}
+
+.footer a {
+  color: #ff6347; /* Color rojo tomate para el enlace */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ffcc00; /* Cambio de color a dorado oscuro al pasar el ratón */
+}
+
+.footer a:focus {
+  outline: none;
+  text-decoration: underline;
+}
+
+.carousel-item {
+  transition: transform 1s ease-in-out;
+  display: inline-block;
+  animation: carouselAnimation 10s infinite linear;
+}
+
+.carousel-inner {
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+.carousel-inner img {
+  width: 150px;
+  height: 200px;
+}
+
+.carousel-inner img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+@keyframes carouselAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-150%);
+  }
+}
